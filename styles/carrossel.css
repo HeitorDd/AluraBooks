@@ -1,0 +1,167 @@
+.carrossel__titulo{
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 180x;
+    padding: 1.25em 0 0.75em 0;
+    /* padding=espaçamento */
+    /* 1.25 = cima 0.75= baixo 0,0 = esquerda e direita */
+}
+
+.carrossel{
+    margin: 0.5em 0 0 0 ;
+    width: 100%;
+}
+
+.swiper-slide img{
+    width: 235%;
+
+}
+
+/* .swiper-button-prev ,
+.swiper-button-next {
+    display: none;
+    nao funciona
+} */
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0 , 0 , 0 , 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+.descricao__titulo-livro{
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0.5em 0;
+}
+
+.descricao__texto{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.botoes__item{
+    margin: 0 0.5em;
+    align-items: center;
+}
+
+.botoes__ancora{
+    text-decoration: none;
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+}
+
+.carrossel__titulo{
+    margin: 0 0 1em 0;
+}
+
+.autora__mes{
+    font-family: var(--fonte-principal);
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 14px
+}
+
+.autora__nome{
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    margin: 0.6em 0;
+}
+
+.descricao__autora{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    line-height: 1em;
+    font-weight: 400;
+
+}
+
+.estrelinhas{
+    margin:  0 0 0.5em;
+}
+
+.imagem__autora{
+margin: 0 0 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 40%;
+    }
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+    
+    
+}
+@media screen and (min-width:1350px){
+    .carrossel__container{
+        display: flex;
+        align-items: center;
+
+    }
+    .carrossel{
+        padding: 4em;
+    }
+    .descricao__titulo{
+        font-size: 32px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+        
+    }
+    .carrossel{
+        padding-left: 0.5em;
+    }
+
+}
+

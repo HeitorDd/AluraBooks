@@ -1,0 +1,193 @@
+.cabecalho__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu{
+    background-image: url("../img/Menu\ Aberto.png");
+
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container__texto{
+    display: none;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista__menu{
+    display: none;
+    position: absolute;
+    top: 70%;
+    width: 55vw;
+}
+
+.container__botao:checked ~ .lista__menu{
+    /* FAZ APARECER AS OPÇOES QUANDO CLICADO */
+    display: block;
+}
+
+.lista__menu{
+    background-color: var(--branco);
+}
+
+.lista__menu__titulo, 
+.lista__menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista__menu__titulo{
+    color: var(--laranja);
+}
+
+.lista__menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+/* 
+input[type=checkbox] {
+    display:none;
+    Outra opcao sumir com a checkbox
+} */
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+.container__text{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    /* Media Queries */
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente{
+        display: none;
+    }
+
+    .cabecalho__menu{
+        display: none;
+    }
+    
+    .opcoes__botao:checked ~ .lista__menu{
+        display: block;
+        width: auto;
+        height: 10px;   
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+    .opcoes__item{
+        padding: 1em 2em;
+    }
+    .lista__menu__item:hover{
+        background: var(--azul-degrade);
+    }
+    .lista__menu__item:hover > .lista__menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (min-width: 1350px){
+    .container__botoes{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+    .container__texto{
+        display: block;
+        font-family: var(--fonte-principal);
+    }
+
+}
+
+@media screen and (min-width:1350px){
+    .banner_pesquisa{
+        width: 25%;
+    }
+    .banner_pesquisa{
+        background-position: 8em;
+    }
+    .banner{
+        padding: 5em 0;
+    }
+    
+}
